@@ -17,6 +17,8 @@ class CreateNovelsTable extends Migration
             $table->id();
             $table->string('name');
             $table->float('price');
+            $table->text('description');
+            $table->boolean('available');
             $table->timestamp('on_sale_date')->nullable();
             $table->string('volume');
             $table->string('trim_size')->nullable();
