@@ -15,13 +15,10 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->float('price');
-            $table->timestamp('on_sale_date')->nullable();
-            $table->string('volume')->nullable();
-            $table->string('trim_size')->nullable();
-            $table->integer('page');
-            $table->string('rated')->nullable();
+            $table->string('title');
+            $table->string('subtitle');
+            $table->string('body');
+            $table->string('cover')->nullable();
             $table->timestamps();
         });
     }
