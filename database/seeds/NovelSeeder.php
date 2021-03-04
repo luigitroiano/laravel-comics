@@ -3,6 +3,8 @@
 use Illuminate\Database\Seeder;
 use App\Novel;
 use Faker\Generator as Faker;
+use Illuminate\Support\Str;
+
 class NovelSeeder extends Seeder
 {
     /**
@@ -25,6 +27,7 @@ class NovelSeeder extends Seeder
             $newNovel->page = $faker->numberBetween(50, 150);
             $newNovel->rated = $faker->randomElement(['Teen']);
             $newNovel->cover = $value['cover'];
+            $newNovel->slug = Str::slug($newNovel->name);
             $newNovel->save();
         }
     }

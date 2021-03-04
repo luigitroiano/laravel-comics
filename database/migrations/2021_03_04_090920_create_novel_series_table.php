@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateArtistsTable extends Migration
+class CreateNovelSeriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,13 @@ class CreateArtistsTable extends Migration
      */
     public function up()
     {
-        Schema::create('artists', function (Blueprint $table) {
+        Schema::create('novel_series', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('novel_id')->nullable();
+            $table->foreign('novel_id')->references('id')->on('novels');
             $table->string('name');
-            $table->string('lastname');
+            $table->boolean('available');
+            $table->string('cover');
             $table->string('slug')->unique();
             $table->timestamps();
         });
@@ -29,6 +32,6 @@ class CreateArtistsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('artists');
+        Schema::dropIfExists('novel_series');
     }
 }

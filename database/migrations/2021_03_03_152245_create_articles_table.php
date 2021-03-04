@@ -19,6 +19,7 @@ class CreateArticlesTable extends Migration
             $table->string('subtitle');
             $table->text('body');
             $table->string('cover')->nullable();
+            $table->string('slug')->unique();
             $table->timestamps();
         });
     }

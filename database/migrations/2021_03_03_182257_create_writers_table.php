@@ -17,6 +17,7 @@ class CreateWritersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('lastname');
+            $table->string('slug')->unique();
             $table->timestamps();
         });
     }

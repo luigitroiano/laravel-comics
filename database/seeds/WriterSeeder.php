@@ -3,6 +3,8 @@
 use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
 use App\Writer;
+use Illuminate\Support\Str;
+
 class WriterSeeder extends Seeder
 {
     /**
@@ -16,6 +18,7 @@ class WriterSeeder extends Seeder
             $newWriter = new Writer();
             $newWriter->name = $faker->firstName();
             $newWriter->lastname = $faker->lastName();
+            $newWriter->slug = Str::slug($newWriter->name . '-' . $newWriter->lastname);
             $newWriter->save();
         }
     }

@@ -25,6 +25,7 @@ class CreateNovelsTable extends Migration
             $table->integer('page');
             $table->string('rated');
             $table->string('cover')->nullable();
+            $table->string('slug')->unique();
             $table->timestamps();
         });
     }

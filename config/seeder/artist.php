@@ -17,8 +17,8 @@ return [
     'lastname' => 'Hopkinson'
   ],
   [
-    'name' => 'Simon',
-    'lastname' => 'Spurrier'
+    'name' => 'Massimo',
+    'lastname' => 'Voltaggio'
   ],
   [
     'name' => 'Joshua',

@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Seeder;
 use App\Artist;
+use Illuminate\Support\Str;
+
 class artistSeeder extends Seeder
 {
     /**
@@ -16,6 +18,7 @@ class artistSeeder extends Seeder
             $newArtist = new Artist();
             $newArtist->name = $value['name'];
             $newArtist->lastname = $value['lastname'];
+            $newArtist->slug = Str::slug($newArtist->name . '-' . $newArtist->lastname);
             $newArtist->save();
         }
     }
