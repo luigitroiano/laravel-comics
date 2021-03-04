@@ -129,8 +129,9 @@ class NovelController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Novel $novel)
     {
-        //
+        $novel->delete();
+        return redirect()->route('admin.novels.index');
     }
 }
