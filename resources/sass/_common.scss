@@ -1,0 +1,13 @@
+//flex-box
+.d_flex{
+  display: flex;
+}
+//container
+.container_80{
+  margin: auto;
+  width: 80%;
+}
+//input search
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}

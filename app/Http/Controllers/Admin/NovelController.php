@@ -17,7 +17,8 @@ class NovelController extends Controller
      */
     public function index()
     {
-        $novels = Novel::all();
+        $novels = Novel::latest()->get();
+        //$novels = Novel::all();
         //dd($novels);
         return view('admin.novels.index', compact('novels'));
     }

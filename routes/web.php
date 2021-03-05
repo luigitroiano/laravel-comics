@@ -18,7 +18,7 @@ Route::get('novels', 'PageController@novels')->name('novels');
 Route::get('articles', 'PageController@articles')->name('articles');
 
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 // ['register' => false]
 
