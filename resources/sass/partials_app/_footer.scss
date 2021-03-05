@@ -1,0 +1,103 @@
+//MAIN FOOTER
+#footer_links{
+  height: 380px;
+  background-image: url('img/footer/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container_80{
+    height: 100%;
+    .footer_menu{
+      width: 50%;
+      height: 100%;
+      padding: 25px 0;
+    }
+    .links{
+      h5{
+        color: white;
+        margin-bottom: 5px;
+      }
+      ul{
+        padding: 0 30px 0 0;
+        li{
+          list-style: none;
+          a{
+            font-size: small;
+            color: #949494;
+            &:hover{
+              text-decoration: none;
+              color: $blue_comics;
+            }
+          }
+        }
+      }
+    }
+    .copyright{
+      font-size: small;
+      color: #949494;
+      a{
+        color: $blue_comics;
+        &:hover{
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+    .logo{
+      position: relative;
+      width: 50%;
+      height: 100%;
+      img{
+        height: 500px;
+        top: 50%;
+        position: absolute;
+        left: 56%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+// LOWER FOOTER 
+#footer_lower{
+  position: relative;
+  height: 100px;
+  background-color: #303030;
+  align-items: center;
+  .container_80{
+    justify-content: space-between;
+  }
+  .button{
+    border: 1px solid $blue_comics;
+    padding: 7px 7px;
+    color: white;
+      &:hover{
+        background-color: $blue_comics;
+        text-decoration: none;
+        color: #303030;
+      }
+  }
+  .socials{
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    span{
+      color: $blue_comics;
+      font-weight: 800;
+    }
+    a{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #797979;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #303030;
+      i{
+        font-size: larger;
+      }&:hover{
+      text-decoration: none;
+      background-color: $blue_comics;
+    }
+    }
+  }
+}

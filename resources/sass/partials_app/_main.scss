@@ -1,0 +1,17 @@
+// SECTION SERVICES
+#section_services{
+  background-color: $blue_comics;
+  height: 150px;
+  align-items: center;
+  .services{
+    justify-content: space-around;
+    img{
+      height: 50px;
+    }
+    span{
+      color: white;
+      font-size: smaller;
+      padding-left: 5px;
+    }
+  }
+}

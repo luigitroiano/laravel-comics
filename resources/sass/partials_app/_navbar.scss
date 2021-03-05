@@ -39,6 +39,9 @@
             color: white;
           }
         }
+        &:last-child{
+          margin-right: 25px;
+        }
       }
       .active{
         background-color: white;

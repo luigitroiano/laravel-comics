@@ -130,9 +130,142 @@
             </nav>
         </header>
 
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
+        <footer>
+            {{-- SECTION FOOTER LINKS --}}
+            <section id="footer_links">
+                <div class="container_80 d_flex">
+                    <div class="footer_menu">
+                        <div class="links d_flex">
+                            <div>
+                                <h5>DC COMICS</h5>
+                                <ul>
+                                    <li> 
+                                        <a href="#">Characters</a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">Comics</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Movies</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">TV</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Games</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Videos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">News</a>
+                                    </li>
+                                </ul>
+                                <h5>SHOP</h5>
+                                <ul>
+                                    <li>
+                                        <a href="#">Shop DC</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Shop DC Collectibles</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>DC</h5>
+                                <ul>
+                                    <li>
+                                        <a href="#">Terms Of Use</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy Policy (New)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Advertising</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Jobs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sunscriptions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Talent Workshop</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">CPSC Certificates</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ratings</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Shop Help</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>SITES</h5>
+                                <ul>
+                                    <li>
+                                        <a href="#">DC</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">MAD Magazine</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">DC Kids</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">DC Univers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">DC Shop</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="copyright">
+                            All Site Content &trade; and &copy; <?php echo date("Y"); ?> DC Entertainment, unless otherwise <a href="#">noted here</a>. All rights reserved. <a href="#">Cookies Settings</a> 
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <img src="{{asset('img/footer/logo-background-v2.png')}}" alt="">
+                    </div>
+                </div>
+            </section>
+            {{-- SECTION LOWER FOOTER --}}
+            <section id="footer_lower" class="d_flex">
+                <div class="container_80 d_flex">
+                    <div>
+                        <a class="button" href="#">SIGN-UP NOW!</a>
+                    </div>
+                    <div class=" socials d_flex">
+                        <span>FOLLOW US</span>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </footer>
     </div>
 </body>
 </html>
