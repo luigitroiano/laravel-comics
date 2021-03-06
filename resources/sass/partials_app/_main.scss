@@ -1,3 +1,79 @@
+//SECTION COMICS
+#section_comics{
+  background-color: $bg_dark;
+  margin-top: 45px;
+  .heading{
+    height: 70px;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    h3{
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-50%);
+      background-color: $blue_comics;
+      color: white;
+      font-weight: 600;
+      min-width: 375px;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+    }
+    ul{
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 380px;
+      display: flex;
+      justify-content: space-between;
+
+      li{
+        list-style: none;
+        a{
+          color: $txt_grey;
+          font-weight: 500;
+          font-size: small;
+          &:hover{
+          color: $blue_comics;
+          text-decoration: none;
+        }
+        }
+        .active{
+          color: $blue_comics;
+          
+        }
+      }
+    }
+  }
+  .carousel_container{
+    height: 480px;
+    background-color: $bg_dark;
+    .carousel{
+      position: relative;
+      margin: 0 10px;
+      .carousel-item{
+        .row{
+          height: 480px;
+          .card{
+            width: calc(100%/5);
+            background-color: $bg_dark;
+          }
+        }
+      }
+      .carousel-control-prev,
+      .carousel-control-next{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 50%;
+        background-color: black;
+        border-radius: 50%;
+      }
+    }
+  }
+}
 // SECTION SERVICES
 #section_services{
   background-color: $blue_comics;

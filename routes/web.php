@@ -18,12 +18,15 @@ Route::get('novels', 'PageController@novels')->name('novels');
 Route::get('articles', 'PageController@articles')->name('articles');
 
 
+//Route Guest
+Route::resource('comics', 'Guest\NovelController');
+
+//Authentication
 Auth::routes(['register' => false]);
 
 // ['register' => false]
 
-//Route admin
-
+//Route Admin
 Route::middleware('auth')->namespace('Admin')->prefix('admin')->name('admin.')->group(function (){
     Route::get('/', 'HomeController@index')->name('index');
     Route::resource('novels', 'NovelController');

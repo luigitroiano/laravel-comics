@@ -22,7 +22,7 @@
           list-style: none;
           a{
             font-size: small;
-            color: #949494;
+            color: $txt_grey;
             &:hover{
               text-decoration: none;
               color: $blue_comics;
@@ -33,7 +33,7 @@
     }
     .copyright{
       font-size: small;
-      color: #949494;
+      color: $txt_grey;
       a{
         color: $blue_comics;
         &:hover{
