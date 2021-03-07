@@ -38,7 +38,7 @@
                                     </a>
                                     @endif
                                     <div class="carousel-caption d-none d-md-block" style="position: absolute; left:0; bottom: 12px; width: 100%; padding: 0; text-align: left; margin: 0 15px">
-                                    <h5 style="font-weight: 600; letter-spacing: 0.05em; font-size: 15px;">{{ $product->name }} # <?php echo rand(1,150)?></h5>
+                                    <h5 style="font-weight: 600; letter-spacing: 0.05em; font-size: 15px;">{{ $product->name }} # {{$product->volume}}</h5>
                                     <h6 style="font-weight: 400; letter-spacing: 0.05em; color: #0182F9">{{ $product->available ? "AVAILABLE NOW" : "OUT OF STOCK" }}</h6>
                                 </div>
                                 </div>

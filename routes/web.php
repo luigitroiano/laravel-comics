@@ -22,7 +22,7 @@ Route::get('articles', 'PageController@articles')->name('articles');
 Route::resource('comics', 'Guest\NovelController');
 
 //Authentication
-Auth::routes(['register' => false]);
+Auth::routes();
 
 // ['register' => false]
 

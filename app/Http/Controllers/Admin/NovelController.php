@@ -56,12 +56,18 @@ class NovelController extends Controller
             'page' => 'required',
             'rated' => 'required',
             'cover' => 'nullable | image | max:500',
+            'parallax' => 'nullable | image',
             'slug' => 'required',
         ]);
 
         $cover = Storage::put('cover_imgs', $request->cover);
+        $parallax = Storage::put('jumbotron_show', $request->parallax);
+        
+        
         $validation['cover'] = $cover;
+        $validation['parallax'] = $parallax;
         Novel::create($validation);
+        
         
         $new_novel = Novel::orderBy('id', 'desc')->first();
         return redirect()->route('admin.novels.index', $new_novel);
@@ -113,11 +119,16 @@ class NovelController extends Controller
             'page' => 'required',
             'rated' => 'required',
             'cover' => 'nullable | image | max:500',
+            'parallax' => 'nullable | image | max:500',
             'slug' => 'required',
         ]);
 
         $cover = Storage::put('cover_imgs', $request->cover);
+        $parallax = Storage::put('jumbotron_show', $request->parallax);
+
         $validation['cover'] = $cover;
+        $validation['parallax'] = $parallax;
+
         $novel->update($validation);
 
         

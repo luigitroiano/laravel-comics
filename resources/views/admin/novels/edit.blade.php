@@ -81,6 +81,12 @@
     <input type="file" class="form-control-file" name="cover" id="cover" placeholder="Add a cover image" aria-describedby="fileHelpId" value="{{ $novel->cover }}" required>
     <small id="fileHelpId" class="form-text text-muted">Add a cover image for the current Novel</small>
   </div>
+  {{-- INPUT PARALLAX IMG --}}
+  <div class="form-group">
+    <label for="parallax">Parallax image</label>
+    <input type="file" class="form-control-file" name="parallax" id="parallax" placeholder="Add a parallax image" aria-describedby="fileHelpId" required>
+    <small id="fileHelpId" class="form-text text-muted">Add a cover parallax image for the current Novel</small>
+  </div>
   {{-- BUTTON SUBMIT --}}
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

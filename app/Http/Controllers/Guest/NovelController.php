@@ -44,9 +44,11 @@ class NovelController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Novel $novel)
+    public function show(Novel $novels, $slug)
     {
-        return view('guests.show', compact('novel'));
+        $novels = Novel::where('slug', $slug)->first();
+        //dd($novels);
+        return view('guests.show', compact('novels'));
     }
 
     /**

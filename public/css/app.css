@@ -376,6 +376,124 @@ input[type=search]::-webkit-search-cancel-button {
   padding-left: 5px;
 }
 
+#parallax {
+  height: 500px;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#parallax .blue_bar {
+  width: 100%;
+  height: 50px;
+  background-color: #0182F9;
+  position: absolute;
+  top: 90%;
+}
+
+#parallax .novel-cover {
+  position: absolute;
+  bottom: 20px;
+  left: 25%;
+  z-index: 99;
+  border: 1px solid white;
+}
+
+#heading {
+  width: 60%;
+  margin: auto;
+  flex-direction: column;
+}
+
+#heading div {
+  padding: 30px 0px;
+}
+
+#heading .novel_price {
+  color: white;
+  width: 500px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: #54BA58;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+#heading .novel_price .available {
+  text-transform: uppercase;
+}
+
+#heading .novel_price h6 {
+  margin: 0;
+}
+
+#heading .novel_available_check {
+  width: 300px;
+  justify-content: center;
+  background-color: #54BA58;
+  padding: 15px 20px;
+  align-items: center;
+  color: white;
+  border-left: 1px solid gray;
+}
+
+#heading .novel_available_check h6 {
+  margin: 0;
+  line-height: 2;
+}
+
+#heading .novel_description {
+  text-transform: none;
+  width: 800px;
+}
+
+#heading .novel_description h6 {
+  line-height: 2;
+}
+
+#specs {
+  width: 100%;
+  margin: auto;
+  text-transform: none;
+  background-color: #F6F6F6;
+  padding: 40px 0px;
+}
+
+#specs .talent-specs {
+  width: 60%;
+  margin: auto;
+}
+
+#specs .talent-specs div {
+  width: 600px;
+}
+
+#specs .talent-specs ul {
+  margin: 0;
+  list-style: none;
+}
+
+#specs .talent-specs .talent {
+  flex-direction: column;
+}
+
+#specs .talent-specs .talent .artist,
+#specs .talent-specs .talent .writer {
+  color: #0182F9;
+  font-weight: bold;
+}
+
+#specs .talent-specs .specs {
+  margin-left: 30px;
+  flex-direction: column;
+}
+
+#specs .talent-specs .specs .serie_name {
+  text-transform: uppercase;
+  color: #0182F9;
+  font-weight: bold;
+}
+
 #footer_links {
   height: 380px;
   background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);

@@ -27,6 +27,7 @@ class NovelSeeder extends Seeder
             $newNovel->page = $faker->numberBetween(50, 150);
             $newNovel->rated = $faker->randomElement(['Teen']);
             $newNovel->cover = $value['cover'];
+            $newNovel->parallax = $value['parallax'];
             $newNovel->slug = Str::slug($newNovel->name);
             $newNovel->save();
         }

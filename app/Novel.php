@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Novel extends Model
 {
-    protected $fillable = ['name', 'description', 'price', 'available', 'on_sale_date', 'volume', 'trim_size', 'page', 'rated', 'cover', 'slug'];
+    protected $fillable = ['name', 'description', 'price', 'available', 'on_sale_date', 'volume', 'trim_size', 'page', 'rated', 'cover', 'parallax', 'slug'];
 
     public function getRouteKeyName()
     {

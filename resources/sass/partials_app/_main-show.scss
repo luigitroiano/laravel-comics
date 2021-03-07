@@ -1,0 +1,106 @@
+//IMG PARALLAX
+#parallax {
+  height: 500px;
+  background-attachment: fixed;
+  position: relative;
+  .blue_bar {
+      width: 100%;
+      height: 50px;
+      background-color: $blue_comics;
+      position: absolute;
+      top: 90%;
+  }
+  .novel-cover {
+      position: absolute;
+      bottom: 20px;
+      left: 25%;
+      z-index: 99;
+      border: 1px solid white;
+  }
+}
+//HEADING
+#heading {
+  width: 60%;
+  margin: auto;
+  flex-direction: column;
+  div {
+    padding: 30px 0px;
+  }
+  .novel_price {
+    color: white;
+    width: 500px;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: $buy_green;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    .available {
+      text-transform: uppercase;
+    }
+    h6 {
+      margin: 0;
+    }
+      
+  }
+  .novel_available_check {
+    width: 300px;
+    justify-content: center;
+    background-color: $buy_green;
+    padding: 15px 20px;
+    align-items: center;
+    color: white;
+    border-left: 1px solid gray;
+    h6{
+      margin: 0;
+      line-height: 2;
+    }
+  }
+
+  .novel_description {
+    text-transform: none;
+    width: 800px;
+    h6{
+      line-height: 2;
+    }
+  }   
+}
+//SPECS
+#specs {
+  width: 100%;
+  margin: auto;
+  text-transform: none;
+  background-color: $bg_lightgrey;
+  padding: 40px 0px;
+  
+  .talent-specs{
+      width: 60%;
+      margin: auto;
+      
+      div {
+          width: 600px;
+      }
+        ul {
+            margin: 0;
+            list-style: none;
+        }
+
+        .talent{
+            flex-direction: column;
+            .artist,.writer {
+                color: $blue_comics;
+                font-weight: bold;
+            }
+        }
+
+        .specs {
+            margin-left: 30px;
+            flex-direction: column;
+            .serie_name {
+                text-transform: uppercase;
+                color: $blue_comics;
+                font-weight: bold;
+            }
+        }
+  }
+}
