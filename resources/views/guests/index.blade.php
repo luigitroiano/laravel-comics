@@ -14,6 +14,7 @@
                 </ul>
             </div>
         </div>
+        {{-- CAROUSEL --}}
         <div class="carousel_container">
             
 
@@ -37,7 +38,7 @@
                                     </a>
                                     @endif
                                     <div class="carousel-caption d-none d-md-block" style="position: absolute; left:0; bottom: 12px; width: 100%; padding: 0; text-align: left; margin: 0 15px">
-                                    <h5 style="font-weight: 400; letter-spacing: 0.05em; font-size: 15px;">{{ $product->name }} # <?php echo rand(1,150)?></h3>
+                                    <h5 style="font-weight: 600; letter-spacing: 0.05em; font-size: 15px;">{{ $product->name }} # <?php echo rand(1,150)?></h5>
                                     <h6 style="font-weight: 400; letter-spacing: 0.05em; color: #0182F9">{{ $product->available ? "AVAILABLE NOW" : "OUT OF STOCK" }}</h6>
                                 </div>
                                 </div>
@@ -79,26 +80,42 @@
         </div>
     </section>
     {{-- SECTION CURRENT SERIES --}}
-    <section></section>
+    <section id="section_current_series">
+        <div class="container_series container_80">
+            <div class="label">
+                <h3 class="d_flex">CURRENT SERIES</h3>
+            </div>
+            <div class="container d_flex">
+            @foreach ($series as $item)
+            <a href="#" class="card_container">
+                <div class="card">
+                    <img src="{{ asset($item->cover) }}" alt="">
+                    <h5>{{ $item->name }}</h5>
+                </div>
+            </a>
+            @endforeach
+            </div>
+        </div>
+    </section>
     {{-- SECTION SERVICES --}}
     <section id="section_services" class="d_flex">
-                <div class="services container_70 d_flex">
-                    <div class="service">
-                        <img src="{{ asset('img/footer/buy_bar/svgexport-1.svg') }}" alt="">
-                        <span>DIGITAL COMICS</span>
-                    </div>
-                    <div class="service">
-                        <img src="{{ asset('img/footer/buy_bar/svgexport-2.svg') }}" alt="">
-                        <span>DC MERCHANDISE</span>
-                    </div>
-                    <div class="service">
-                        <img src="{{ asset('img/footer/buy_bar/svgexport-3.svg') }}" alt="">
-                        <span>PRINT SUBSCRIPTIONS</span>
-                    </div>
-                    <div class="service">
-                        <img src="{{ asset('img/footer/buy_bar/svgexport-4.svg') }}" alt="">
-                        <span>COMIC SHOP LOCATOR</span>
-                    </div>
-                </div>
-            </section>
+        <div class="services container_70 d_flex">
+            <div class="service">
+                <img src="{{ asset('img/footer/buy_bar/svgexport-1.svg') }}" alt="">
+                <span>DIGITAL COMICS</span>
+            </div>
+            <div class="service">
+                <img src="{{ asset('img/footer/buy_bar/svgexport-2.svg') }}" alt="">
+                <span>DC MERCHANDISE</span>
+            </div>
+            <div class="service">
+                <img src="{{ asset('img/footer/buy_bar/svgexport-3.svg') }}" alt="">
+                <span>PRINT SUBSCRIPTIONS</span>
+            </div>
+            <div class="service">
+                <img src="{{ asset('img/footer/buy_bar/svgexport-4.svg') }}" alt="">
+                <span>COMIC SHOP LOCATOR</span>
+            </div>
+        </div>
+    </section>
 @endsection

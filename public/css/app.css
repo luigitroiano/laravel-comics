@@ -260,10 +260,21 @@ input[type=search]::-webkit-search-cancel-button {
   padding-right: 20px;
 }
 
+#section_must_reads .container .card_container .card img {
+  transition: 0.5s ease;
+  z-index: 2;
+}
+
+#section_must_reads .container .card_container .card img:hover {
+  transform: scale(1.08);
+  z-index: 5;
+}
+
 #section_must_reads .container .card_container .card h6 {
   text-transform: uppercase;
   color: #0182F9;
   font-weight: 800;
+  margin-top: 10px;
   margin-bottom: 3px;
 }
 
@@ -276,6 +287,73 @@ input[type=search]::-webkit-search-cancel-button {
 #section_must_reads .container .card_container .card p {
   line-height: 1.1em;
   color: black;
+}
+
+#section_current_series {
+  height: 490px;
+  background-color: #1D1D1D;
+}
+
+#section_current_series .container_series {
+  height: inherit;
+  padding: 0;
+}
+
+#section_current_series .container_series .label {
+  position: relative;
+}
+
+#section_current_series .container_series .label h3 {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #0182F9;
+  color: white;
+  font-weight: 600;
+  min-width: 275px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+#section_current_series .container_series .container {
+  height: 100%;
+  flex-wrap: wrap;
+  padding: 30px 25px;
+}
+
+#section_current_series .container_series .container .card_container {
+  width: calc(100%/6);
+}
+
+#section_current_series .container_series .container .card_container:hover {
+  text-decoration: none;
+}
+
+#section_current_series .container_series .container .card_container .card {
+  border: none;
+  background-color: #1D1D1D;
+}
+
+#section_current_series .container_series .container .card_container .card img {
+  padding: 10px;
+  transition: 0.5s ease;
+  z-index: 2;
+}
+
+#section_current_series .container_series .container .card_container .card img:hover {
+  transform: scale(1.1);
+  z-index: 5;
+}
+
+#section_current_series .container_series .container .card_container .card h5 {
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  font-size: 12px;
+  padding: 0 10px;
+  color: white;
 }
 
 #section_services {

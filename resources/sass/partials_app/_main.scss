@@ -109,10 +109,19 @@
       .card{
         border: none;
         padding-right: 20px;
+        img{
+          transition: 0.5s ease;
+          z-index: 2;
+          &:hover{
+            transform: scale(1.08);
+            z-index: 5;
+          }
+        }
         h6{
           text-transform: uppercase;
           color: $blue_comics;
           font-weight: 800;
+          margin-top: 10px;
           margin-bottom: 3px;
         }
         h4{
@@ -126,6 +135,64 @@
         }
       }
     }
+  }
+}
+//SECTION CURRENT SERIES
+#section_current_series{
+  height: 490px;
+  background-color: $bg_dark;
+  .container_series{
+    height: inherit;
+    padding: 0;
+    .label{
+      position: relative;
+      h3{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-50%);
+        background-color: $blue_comics;
+        color: white;
+        font-weight: 600;
+        min-width: 275px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .container{
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 30px 25px;
+      .card_container{
+        width: calc(100%/6);
+        &:hover{
+          text-decoration: none;
+        }
+        .card{
+          border: none;
+          background-color: $bg_dark;
+          img{
+            padding: 10px;
+            transition: 0.5s ease;
+            z-index: 2;
+            &:hover{
+              transform: scale(1.1);
+              z-index: 5;
+            }
+          }
+          h5{
+            font-weight: 500; 
+            letter-spacing: 0.05em; 
+            font-size: 12px;
+            padding: 0 10px;
+            color: white;
+          }
+        }
+      }
+    }
+    
   }
 }
 // SECTION SERVICES

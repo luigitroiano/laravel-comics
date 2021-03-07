@@ -19,10 +19,7 @@
       <tr>
         <td scope="row">{{ $item->id }}</td>
         <td>
-          @if ($item->cover)
-            <img src="{{ asset('storage/' . $item->cover) }}" alt="">  
-            <img src="{{ asset($item->cover) }}" alt="">    
-          @endif
+          <img src="{{ asset('storage/' . $item->cover) }}" alt="">  
         </td>
         <td>{{ $item->name }}</td>
         <td>{{ $item->description }}</td>
