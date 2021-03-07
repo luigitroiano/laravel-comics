@@ -59,6 +59,14 @@
           .card{
             width: calc(100%/5);
             background-color: $bg_dark;
+            img{
+              transition: 0.5s ease;
+              z-index: 2;
+              &:hover{
+                transform: scale(1.1);
+                z-index: 5;
+              }
+            }
           }
         }
       }
@@ -70,6 +78,52 @@
         top: 50%;
         background-color: black;
         border-radius: 50%;
+      }
+    }
+  }
+}
+//SECTION MUST READS
+#section_must_reads{
+  height: 530px;
+  .label{
+    height: 75px;
+    h3{
+      margin: 0;
+      color: $blue_comics;
+      font-weight: 600;
+      height: inherit;
+      display: flex;
+      align-items: center;
+      height: inherit;
+      margin-left: 60px;
+    }
+  }
+  .container{
+    height: calc(100% - 75px);
+    padding: 0;
+    .card_container{
+      width: calc(100%/4);
+      &:hover{
+        text-decoration: none;
+      }
+      .card{
+        border: none;
+        padding-right: 20px;
+        h6{
+          text-transform: uppercase;
+          color: $blue_comics;
+          font-weight: 800;
+          margin-bottom: 3px;
+        }
+        h4{
+          font-weight: 800;
+          margin-bottom: 3px;
+          color: black;
+        }
+        p{
+          line-height: 1.1em;
+          color: black;
+        }
       }
     }
   }
